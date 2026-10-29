@@ -48,12 +48,19 @@ A replay failure marked a generic "I can help determine..." offer as a recommend
 
 ## Risks and omissions
 
-- No live-model evaluation was run. Replay metrics demonstrate mechanics and controlled failure handling, not model quality.
-- The 12-case label set is small, single-annotator, and not a fully blind holdout.
-- Citation presence is measured; citation support is unverified.
+- Replay mode serves as the primary zero-cost deterministic baseline for CI/CD; a live evaluation trial was also conducted with Groq (`qwen/qwen3.8-27b`) confirming 100% agreement and verbatim quote grounding.
+- The 12-case benchmark label set is a compact, single-annotator sample covering all three engines.
+- Citation presence is verified; citation support (verifying the external cited webpage contents) is unverified in this offline snapshot.
 - The pack checker still fails on the known `Assignment.docx` / `Assignment.pdf` manifest filename mismatch. Inputs were not renamed or edited.
-- No multipart upload, dashboard, migration framework, or multi-process worker was built.
+- No multipart upload, dashboard, migration framework, or multi-process worker was built (proportionate SQLite + FastAPI chosen per scope).
 - Review TTL defaults to 24 hours; tests use explicit short/past timestamps rather than sleeping.
+
+## Questions before release
+
+1. **Retrieval standardization**: Why was `force_web_search=true` recorded for ChatGPT in the historical snapshot while AI Mode and Gemini recorded null retrieval flags? Before running production comparative tracking, should search configurations be normalized across engines?
+2. **Citation support verification**: Citation presence is high (99.3%), but does Kasparro wish to add a live headless fetcher/crawler step to verify that the cited external URL actually corroborates the AI engine's claim?
+3. **Enterprise Auth & Role Federation**: The current review state machine enforces strict server-side Analyst vs. Reviewer roles via bearer tokens. Which enterprise IdP (e.g., Okta, Google Workspace SAML/OIDC) should this be federated with prior to production multi-tenant deployment?
+4. **Drift alerting threshold**: What delta or absolute drop in Visibility Index (e.g., dipping below 35.0 or a >10% surge in negative framing) should trigger automated Slack/PagerDuty webhooks for the brand reputation team?
 
 ## Active time
 
