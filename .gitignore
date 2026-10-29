@@ -25,3 +25,4 @@ db/
 uploads/
 eval/results/
 *.log
+*.zip
