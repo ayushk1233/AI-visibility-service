@@ -1,0 +1,2545 @@
+{
+  "active_time": {
+    "instrumented": false,
+    "note": "Active time was not automatically instrumented. See docs/DECISION_NOTE.md for the honest session estimate and the six-hour cap disclosure."
+  },
+  "analysis": {
+    "analysis_id": "ana_063f0913271447d99ebd90484482b747",
+    "category_taxonomy": "prompt-categories-v1",
+    "classifier_prompt_version": "classify-v1",
+    "config_hash": "eb063f3bd128ef6e8b7bc8db50ce89b61dff0d5d5b0d647082f67307d7b23ed6",
+    "mode": "replay",
+    "model": "replay-v1",
+    "scoring_version": "visibility-v1"
+  },
+  "coverage": {
+    "coverage": 1.0,
+    "eligible": 150,
+    "failed": 0,
+    "pending": 0,
+    "skipped": 0,
+    "succeeded": 150
+  },
+  "diagnostics": [
+    {
+      "counter_check": "All ChatGPT responses used force_web_search=true while AI Mode and Gemini recorded null; AI Mode model labels are missing. A raw engine comparison is therefore confounded.",
+      "evidence": [
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "general",
+          "quote": "Based on the provided search results, there are no specific, publicly available testimonials or reviews from enterprise users regarding **Kasparro's AI revenue diagnostic** tool.",
+          "response_id": "05bdabb0-f779-42bd-9a31-f33b53274e32"
+        },
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "pricing_value",
+          "quote": "Based on 2026 market analysis, determining if Kasparro is worth the money compared to Peec AI depends on whether you need a dedicated, deep-monitoring tool or a broader, integrated solution.",
+          "response_id": "0701bd6b-a5c3-4999-9c2a-51145cab15df"
+        },
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "pricing_value",
+          "quote": "Based on the available information for 2026, **Kasparro** offers a 14-day AI Revenue Diagnostic that covers five surfaces, top 500 SKUs, and includes a per-surface remediation plan.[](https://kasparro.com/) [[1]](https://kasparro.com/)\n\n- **Pricing Structure:** Kasparro specifically states there is **no retainer** and **no setup fee**.",
+          "response_id": "0f7ae466-5a77-42ce-9018-37f243f7d886"
+        }
+      ],
+      "hypothesis": "The gap may reflect engine-specific retrieval and answer composition, or different capture conditions. This snapshot alone cannot identify the cause.",
+      "id": "D1",
+      "observed": "Inclusion was 50.0% on aimode (25/50) versus 44.0% on gemini (22/50). Overall coverage was 100.0% with 0 failed and 0 skipped responses.",
+      "test": "Compare the same prompts across engines with matched search settings and more than one run; inspect the cited sources behind both the strongest and weakest answers.",
+      "title": "Engine inclusion gap"
+    },
+    {
+      "counter_check": "Recommendation labels overlap with negative characterisation, and one response per engine cannot establish run-to-run stability.",
+      "evidence": [
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "implementation_howto",
+          "quote": "Yes, **Kasparro** —and similar specialized **Perplexity SEO** or **AI Search Optimization** strategies—can help an enterprise software brand increase its visibility, citations, and authority within Perplexity answers.[](https://www.greenwebmedia.com/how-to-make-your-business-show-up-in-chatgpt-gemini-and-perplexity-answers/) [[1]](https://www.greenwebmedia.com/how-to-make-your-business-show-up-in-chatgpt-gemini-and-perplexity-answers/)[[2]](https://justdigitalgurus.com/perplexity-seo-service/)[[3]](https://searchforecast.com/perplexity-seo-citation-optimization/)\n\nPerplexity behaves differently than traditional search engines, often citing only one or two authoritative sources per query.[](https://keyword.com/blog/track-brand-mentions-perplexity-ai/) [[1]](https://keyword.com/blog/track-brand-mentions-perplexity-ai/)[[2]](https://www.meetjamie.ai/blog/what-is-perplexity-ai)[[3]](https://seoprofy.com/blog/how-to-rank-in-perplexity-ai/)[[4]](https://www.qwairy.co/blog/how-to-improve-visibility-on-perplexity)\n\nHere is how optimizing for Perplexity works:\n\nCore Strategies to Boost Visibility\n\n- **Structured Data & Schema:** Implementing JSON-LD schemas (Article, Product, FAQPage, Organ",
+          "response_id": "57210f17-4436-4356-9f0f-3f6434ef0a6d"
+        },
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "implementation_howto",
+          "quote": "Based on the search results provided, there is no direct evidence indicating that \"Kasparro \" (a specific entity) relies on prompt hacks or tricks to boost visibility.",
+          "response_id": "58034df8-0d67-4878-827a-376afa1efc2b"
+        },
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "legitimacy_trust",
+          "quote": "Based on the available information as of July 2026, **[Kasparro AI](https://kasparro.com/)** appears to be a legitimate, specialized startup focused on \"AI Visibility\" and \"AI-mediated commerce\".",
+          "response_id": "721ceff5-a4e3-439b-9b56-a8df34f6551b"
+        },
+        {
+          "engine": "gemini",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "onboarding_support",
+          "quote": "Yes, **Kasparro** (an AI visibility and commerce infrastructure platform that tracks and optimizes how brands are discovered and recommended by AI engines like ChatGPT, Gemini, and Perplexity) explicitly supports enterprise and mid-market brands **outside the US**.[bebee.com](https://bebee.com/in/jobs/sales-development-representative-kasparro-ai-bangalore--jobs-sea-4155499219#:~:text=Tools%3A%20Hub%20Spot%2FCRM%20%C2%B7%20Zoom%20%C2%B7%20Google,assistants%2C%20being%20recommended%E2%80%94or%20ignored%E2%80%94becomes%20a%20commercial%20issue.)\n\nSimilar to how enterprise-grade AEO/GEO platforms like **Profound** operate globally across multiple regions and languages, Kasparro builds its core go-to-market and operational footprint specifically around **both US and India/international brands** (targeting $10M to $100M+ businesses).[bebee.com](https://bebee.com/in/jobs/sales-development-representative-kasparro-ai-bangalore--jobs-sea-4155499219#:~:text=Backed%20by%20experienced%20founders%2C%20CMOs%2C%20and%20angels%3B,opens%20a%20deal%20worth%20%2410%E2%80%9330%20K%20ACV%3B) Their client coverage model pairs automated multi-layer intelligence tracking (monitoring, on-site technical/cont",
+          "response_id": "1cf6f5bc-7a29-4128-b51d-aa56891b08f4"
+        },
+        {
+          "engine": "gemini",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "legitimacy_trust",
+          "quote": "**Kasparro** (often searched or spelled similarly to *Kaspr*, a well-known LinkedIn contact-data finder) is a legitimate, early-stage B2B SaaS startup operating in the emerging **AI Visibility and Brand Intelligence** space (sometimes referred to as Generative Engine Optimization or GEO).[useoutly.com](https://useoutly.com/en/blog/kaspr-review/#:~:text=TL%3BDR%20*%20Kaspr%20is%20a%20LinkedIn-based%20contact,US%20and%20other%20regions%20can%20be%20spottier.)\n\nInstead of tracking traditional search engine rankings (like classic SEO tools), Kasparro focuses on how brands are represented, recommended, or omitted by conversational AI engines like ChatGPT, Claude, Gemini, and Perplexity.[getmereferred.com](https://getmereferred.com/in/job-listing/content-and-community-associate-kasparro-ai-inkabengaluru-to-3-years-experience-a83a9c86-b25b-4b5f-9fc2-4adfaf9fb550#:~:text=Brands%20that%20show%20up%20in%20AI%20conversations,That's%20the%20problem%20Kasparro%20exists%20to%20solve.)\n\n### What You Should Know Before Engaging:\n\n* **Real Company and Product:** Kasparro is an active startup with real paying enterprise and D2C clients across India and the US, scaling its operations with active team",
+          "response_id": "1fda2a12-a2df-4ab1-abd5-17b7746bc833"
+        },
+        {
+          "engine": "gemini",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "pricing_value",
+          "quote": "Whether Kasparro is \"overpriced\" for a B2B SaaS startup depends entirely on how you view **AI Engine Optimization (AEO)** and brand visibility within LLMs (like ChatGPT, Claude, and Perplexity) relative to your current growth stage and budget.",
+          "response_id": "20958c20-9648-4b12-bbb6-efbbff33d0fe"
+        }
+      ],
+      "hypothesis": "The difference may come from how each engine frames options, the sources it retrieves, or the prompt's comparison context. It is not evidence of a persistent ranking.",
+      "id": "D2",
+      "observed": "Recommendation was 12.0% on aimode (6/50) versus 6.0% on gemini (3/50). A mention is not counted as a recommendation.",
+      "test": "Hold prompts and capture settings constant, repeat the run, and inspect the answers and sources where Kasparro is mentioned but not presented as an option.",
+      "title": "Recommendation gap"
+    },
+    {
+      "counter_check": "Negative language can coexist with a recommendation; zero citations do not prove an unsupported answer, and citation support was not verified.",
+      "evidence": [
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "general",
+          "quote": "Based on the provided search results, there are no specific, publicly available testimonials or reviews from enterprise users regarding **Kasparro's AI revenue diagnostic** tool.",
+          "response_id": "05bdabb0-f779-42bd-9a31-f33b53274e32"
+        },
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "pricing_value",
+          "quote": "Based on 2026 market analysis, determining if Kasparro is worth the money compared to Peec AI depends on whether you need a dedicated, deep-monitoring tool or a broader, integrated solution.",
+          "response_id": "0701bd6b-a5c3-4999-9c2a-51145cab15df"
+        },
+        {
+          "engine": "chatgpt",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "legitimacy_trust",
+          "quote": "Short answer: **AI visibility tracking is a real problem, but many tools oversell how precisely they can measure it.** Kasparro falls into a category of tools trying to solve a legitimate need, but I'd be skeptical of taking any single \"AI visibility score\" at face value.",
+          "response_id": "08f81acc-0824-4e3a-a5d5-58446e2a6a90"
+        },
+        {
+          "engine": "gemini",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "comparison_alternatives",
+          "quote": "I am unable to provide comparisons or information regarding Kasparro's audit system or Otterly AI's features.",
+          "response_id": "6b68f8f8-5ecd-466c-9664-801227a9167c"
+        }
+      ],
+      "hypothesis": "Negative framing may reflect missing independent proof, category ambiguity, or a mismatch between the question's expectations and the public evidence. The snapshot cannot establish which.",
+      "id": "D3",
+      "observed": "31 of 150 valid responses (20.7%) negatively characterised Kasparro, and 1 valid responses returned no citations. Citation presence is 99.3%; returned links are not verified claim support.",
+      "test": "Inspect the sources behind negative claims, add dated first-party and independent proof where it exists, and repeat a bounded prompt set to see whether the observed labels change.",
+      "title": "Credibility and citation coverage risk"
+    }
+  ],
+  "evidence_audit": {
+    "errors": [],
+    "ok": true
+  },
+  "generated_at": "2026-10-29T10:09:34.025203+00:00",
+  "remedies": [
+    {
+      "action": "Investigate the weakest engine's retrieved sources and answer framing for the same prompts; fix crawl or content-access blockers only where evidence supports them, and publish clear, crawlable pages for the missing use cases.",
+      "effort": "medium",
+      "evidence": [
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "general",
+          "quote": "Based on the provided search results, there are no specific, publicly available testimonials or reviews from enterprise users regarding **Kasparro's AI revenue diagnostic** tool.",
+          "response_id": "05bdabb0-f779-42bd-9a31-f33b53274e32"
+        },
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "pricing_value",
+          "quote": "Based on 2026 market analysis, determining if Kasparro is worth the money compared to Peec AI depends on whether you need a dedicated, deep-monitoring tool or a broader, integrated solution.",
+          "response_id": "0701bd6b-a5c3-4999-9c2a-51145cab15df"
+        },
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "pricing_value",
+          "quote": "Based on the available information for 2026, **Kasparro** offers a 14-day AI Revenue Diagnostic that covers five surfaces, top 500 SKUs, and includes a per-surface remediation plan.[](https://kasparro.com/) [[1]](https://kasparro.com/)\n\n- **Pricing Structure:** Kasparro specifically states there is **no retainer** and **no setup fee**.",
+          "response_id": "0f7ae466-5a77-42ce-9018-37f243f7d886"
+        }
+      ],
+      "expected_benefit": "A better chance of consistent inclusion on the weakest engine.",
+      "id": "R1",
+      "priority": 1,
+      "problem": "Kasparro is included at different rates across engines in this snapshot.",
+      "title": "Close the lowest-inclusion engine gap",
+      "uncertainty": "high",
+      "validation": "Repeat the same prompt set at least three times on the same engine and compare inclusion rate, coverage, and failures against this baseline."
+    },
+    {
+      "action": "Build source-ready comparison, category, and use-case pages that explicitly explain who Kasparro is for and when it is a suitable option, without inventing proof or promising rankings.",
+      "effort": "high",
+      "evidence": [
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "implementation_howto",
+          "quote": "Yes, **Kasparro** —and similar specialized **Perplexity SEO** or **AI Search Optimization** strategies—can help an enterprise software brand increase its visibility, citations, and authority within Perplexity answers.[](https://www.greenwebmedia.com/how-to-make-your-business-show-up-in-chatgpt-gemini-and-perplexity-answers/) [[1]](https://www.greenwebmedia.com/how-to-make-your-business-show-up-in-chatgpt-gemini-and-perplexity-answers/)[[2]](https://justdigitalgurus.com/perplexity-seo-service/)[[3]](https://searchforecast.com/perplexity-seo-citation-optimization/)\n\nPerplexity behaves differently than traditional search engines, often citing only one or two authoritative sources per query.[](https://keyword.com/blog/track-brand-mentions-perplexity-ai/) [[1]](https://keyword.com/blog/track-brand-mentions-perplexity-ai/)[[2]](https://www.meetjamie.ai/blog/what-is-perplexity-ai)[[3]](https://seoprofy.com/blog/how-to-rank-in-perplexity-ai/)[[4]](https://www.qwairy.co/blog/how-to-improve-visibility-on-perplexity)\n\nHere is how optimizing for Perplexity works:\n\nCore Strategies to Boost Visibility\n\n- **Structured Data & Schema:** Implementing JSON-LD schemas (Article, Product, FAQPage, Organ",
+          "response_id": "57210f17-4436-4356-9f0f-3f6434ef0a6d"
+        },
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "implementation_howto",
+          "quote": "Based on the search results provided, there is no direct evidence indicating that \"Kasparro \" (a specific entity) relies on prompt hacks or tricks to boost visibility.",
+          "response_id": "58034df8-0d67-4878-827a-376afa1efc2b"
+        },
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "legitimacy_trust",
+          "quote": "Based on the available information as of July 2026, **[Kasparro AI](https://kasparro.com/)** appears to be a legitimate, specialized startup focused on \"AI Visibility\" and \"AI-mediated commerce\".",
+          "response_id": "721ceff5-a4e3-439b-9b56-a8df34f6551b"
+        }
+      ],
+      "expected_benefit": "More answer contexts where Kasparro can be described as a suitable option.",
+      "id": "R2",
+      "priority": 2,
+      "problem": "Mentions do not reliably become recommendations.",
+      "title": "Create recommendation-ready comparison and category pages",
+      "uncertainty": "high",
+      "validation": "Re-run the comparison prompts and track recommendation rate separately from inclusion rate, with the same denominators and failure visibility."
+    },
+    {
+      "action": "Audit the claims most often questioned, publish dated first-party evidence and seek independent third-party proof where available, and correct unsupported public claims.",
+      "effort": "medium",
+      "evidence": [
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "general",
+          "quote": "Based on the provided search results, there are no specific, publicly available testimonials or reviews from enterprise users regarding **Kasparro's AI revenue diagnostic** tool.",
+          "response_id": "05bdabb0-f779-42bd-9a31-f33b53274e32"
+        },
+        {
+          "engine": "aimode",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "pricing_value",
+          "quote": "Based on 2026 market analysis, determining if Kasparro is worth the money compared to Peec AI depends on whether you need a dedicated, deep-monitoring tool or a broader, integrated solution.",
+          "response_id": "0701bd6b-a5c3-4999-9c2a-51145cab15df"
+        },
+        {
+          "engine": "chatgpt",
+          "note": "Replay heuristic; demonstrates mechanics only, not model quality.",
+          "prompt_category": "legitimacy_trust",
+          "quote": "Short answer: **AI visibility tracking is a real problem, but many tools oversell how precisely they can measure it.** Kasparro falls into a category of tools trying to solve a legitimate need, but I'd be skeptical of taking any single \"AI visibility score\" at face value.",
+          "response_id": "08f81acc-0824-4e3a-a5d5-58446e2a6a90"
+        }
+      ],
+      "expected_benefit": "A stronger evidence base for answers that currently question credibility.",
+      "id": "R3",
+      "priority": 3,
+      "problem": "Some answers question credibility or return no citations.",
+      "title": "Publish independent, dated proof for contested claims",
+      "uncertainty": "high",
+      "validation": "Inspect the cited pages, then repeat a fixed sample and compare negative-characterisation and citation-presence rates; keep source inspection separate from citation presence."
+    }
+  ],
+  "response_index": [
+    {
+      "citation_count": 46,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "003061a9-6cdd-45a0-89c4-9a139020da4a",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 14,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "00f943a2-5355-4205-a6e0-a3ce5de97c51",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 20,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "016fc85b-120b-46fe-958a-53724ad55363",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 28,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "02c5ee8d-0ffe-4940-bf93-5793e7b01528",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 7,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "049203e7-be85-4b73-abb7-3e1f17a6273c",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 8,
+      "engine": "aimode",
+      "negative": true,
+      "present": true,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "05bdabb0-f779-42bd-9a31-f33b53274e32",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 41,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "tool_selection",
+      "recommended": false,
+      "response_id": "0697376e-335d-45ef-a593-bc12c5e1ecf3",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 28,
+      "engine": "aimode",
+      "negative": true,
+      "present": true,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "0701bd6b-a5c3-4999-9c2a-51145cab15df",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 14,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "08f81acc-0824-4e3a-a5d5-58446e2a6a90",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 13,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "0e2c8f07-c483-493d-a9fc-467efc857faa",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 15,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "0eb89a67-4548-4810-ba1c-1881a919823d",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "comparison_alternatives",
+      "recommended": false,
+      "response_id": "0f217f49-ee02-44ea-853d-61fbcc7a9895",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 37,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "tool_selection",
+      "recommended": false,
+      "response_id": "0f38b477-9f3c-44a8-9d10-0b6016db6150",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 3,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "0f7ae466-5a77-42ce-9018-37f243f7d886",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 24,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "tool_selection",
+      "recommended": false,
+      "response_id": "11010066-8ed2-4741-856e-9259ae1a377b",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 4,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "136b8240-008c-46ff-b744-592c4d859e98",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 14,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "tool_selection",
+      "recommended": false,
+      "response_id": "13c261d3-f05a-444f-81d6-69e769af59cf",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 26,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "14a5d324-5cc3-4554-a8ae-9643d5fafa73",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 6,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "comparison_alternatives",
+      "recommended": false,
+      "response_id": "174932c6-7662-448c-8fb7-3217096c51ff",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 32,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "17748847-e19d-4e05-97d1-bcc616cd758f",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 25,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "1a63691b-8c9f-4e1e-ae3b-652f85056e89",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 1,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": true,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "1abaa05d-1d41-4164-b554-1fc1cba01d79",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 10,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "1b58c598-f4b9-43f1-b899-2a25d7ddd9cb",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 13,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "1b626742-8afd-4a92-9ba8-8b42fcbfef00",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 29,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "1c2f6b84-50ad-4192-a20e-8b000e3aa7e1",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 6,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "1cf6f5bc-7a29-4128-b51d-aa56891b08f4",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 17,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "1d2dc007-0757-480d-a086-6b6e2e13c463",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 8,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "1fda2a12-a2df-4ab1-abd5-17b7746bc833",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 2,
+      "engine": "gemini",
+      "negative": true,
+      "present": true,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "20958c20-9648-4b12-bbb6-efbbff33d0fe",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 16,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "2fb1175e-1a18-4fe1-b41b-a75004877ab4",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "brand_about",
+      "recommended": false,
+      "response_id": "2fef505c-f845-43d3-aee0-8926d21bc31e",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "34f5321e-242b-495c-9c68-98f3b297dcb1",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 14,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "35b7cd2b-eef2-4767-84a7-c9e6aff8fcf5",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "37277abf-79bb-4adf-9213-6bcfbe1c6fbf",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 15,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "tool_selection",
+      "recommended": false,
+      "response_id": "3d06d4f2-061d-44e4-9a7b-0628a777fb00",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 14,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "tool_selection",
+      "recommended": false,
+      "response_id": "3d2402de-0de4-4965-bcc5-9c077ddddcd2",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 2,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "3f18cf56-f064-4700-ac81-f5541283972b",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 13,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "40d036db-4c8f-4823-af6f-0a6eaf1fcb8b",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 34,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "42b3f554-e490-43a3-bfcf-08be6cb61261",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "42e35106-67bf-48c8-aaca-4e8ccf910e77",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 28,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "4334ee7a-6315-4312-b0ca-0a58bcd6270c",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 28,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "comparison_alternatives",
+      "recommended": false,
+      "response_id": "449f8530-b47a-411c-9bec-1b5b6e0552cb",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 8,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": true,
+      "response_id": "44a32b81-7166-44dc-bac3-8cd2ae40da73",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 13,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "470803a8-9759-461f-b1e3-8ecf10a6e052",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 3,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "4933e11e-0697-4246-bdda-45a160528a2a",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 20,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "4abad2ab-5d73-4104-bc45-1d7a50c8f244",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 4,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": true,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "4b5b2098-bdb6-4ff7-a1a2-2587f210f444",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 9,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "4b70d3c9-26a1-46ab-94b7-fc4c02857518",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 20,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "4b827e87-9cf6-4188-98b9-937d5678a8e1",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 18,
+      "engine": "aimode",
+      "negative": true,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "4ece3df1-8779-4853-89be-92f5a0100736",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 14,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "4f391c44-7e1a-4d6b-96de-302bc426dfbe",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 11,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "comparison_alternatives",
+      "recommended": false,
+      "response_id": "505cb278-6145-4408-95d1-f42cdce2c695",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 31,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "50ea9a06-36e5-4c74-a6b6-25d981eec70a",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "511317a1-af77-43f1-90a2-cfa92f812676",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 10,
+      "engine": "aimode",
+      "negative": true,
+      "present": true,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "51366d92-2978-4654-b6fb-1f5dca180980",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 22,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "533fc340-e610-410f-9cb0-40c064506ad1",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "53414465-6ef7-4fb2-985f-7586a286e801",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 11,
+      "engine": "aimode",
+      "negative": true,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "537a5dad-1af6-48c5-92ee-37ec68ed22d7",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 18,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": true,
+      "response_id": "5492b420-7fa5-4de4-ab2c-6c4412e5b18d",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 21,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "implementation_howto",
+      "recommended": true,
+      "response_id": "57210f17-4436-4356-9f0f-3f6434ef0a6d",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 18,
+      "engine": "aimode",
+      "negative": true,
+      "present": true,
+      "prompt_category": "implementation_howto",
+      "recommended": true,
+      "response_id": "58034df8-0d67-4878-827a-376afa1efc2b",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 34,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "5beb2a32-6c6c-42d8-861c-9fc9680b9930",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 14,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "comparison_alternatives",
+      "recommended": false,
+      "response_id": "5c9aca1f-7a50-476c-98f7-394a9c40bbc3",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "612ccde7-636c-4978-ae2b-9a55fcdc455a",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 43,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "62da805a-1460-43b4-80b9-3bafab5f7941",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 13,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": true,
+      "response_id": "65d83d99-a531-4149-bdc6-5dff9284e6f4",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 9,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "660dd26e-bada-40be-b3fc-8f04f4f839e1",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 4,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "66854c1c-447b-4eae-9601-d1a5895285e2",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 27,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "67b714d5-bf90-42c2-a360-1d1d3149c1f8",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 23,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "tool_selection",
+      "recommended": false,
+      "response_id": "68d96336-d387-4bac-9662-8596e99dd6a3",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "69e826c2-570d-4213-ba60-799ea925d106",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 0,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "comparison_alternatives",
+      "recommended": false,
+      "response_id": "6b68f8f8-5ecd-466c-9664-801227a9167c",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 8,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "implementation_howto",
+      "recommended": true,
+      "response_id": "6b6e79d3-a582-4d23-8fa6-714c9e982af2",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 26,
+      "engine": "aimode",
+      "negative": true,
+      "present": true,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "6ba5d428-1b45-4c6d-9263-73129d059b01",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 3,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "comparison_alternatives",
+      "recommended": false,
+      "response_id": "71ec5309-af52-4071-af21-bd282ce41cce",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 15,
+      "engine": "aimode",
+      "negative": true,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": true,
+      "response_id": "721ceff5-a4e3-439b-9b56-a8df34f6551b",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 17,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "729e6864-9290-4336-a32e-b9a27ce150a6",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 20,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "72e3c05f-de18-4cc2-8e24-96ffb2e3d593",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 14,
+      "engine": "aimode",
+      "negative": true,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": true,
+      "response_id": "7a570f6f-eea5-4aba-b499-711f7cd1a1ba",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 34,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "7ed900ae-a524-4c47-969c-2c43b2b0b620",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "847af3d3-88c3-4cad-ad9f-a1a4d6889052",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 38,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "comparison_alternatives",
+      "recommended": false,
+      "response_id": "847be62a-f50a-4b19-ab6c-43965fbae5ed",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 2,
+      "engine": "gemini",
+      "negative": true,
+      "present": true,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "861a9955-69ab-46ed-927c-fd336bc37893",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "86af832e-ca04-4b47-b4d5-ff9dd62f2994",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 18,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "874f97b5-f122-4ac0-b53c-c35ddc82291d",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 20,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "89625a58-1069-4b0b-a3eb-1b979d9ee15f",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 30,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "comparison_alternatives",
+      "recommended": false,
+      "response_id": "89babd5f-9a94-4d2c-b2ab-4b7c97345587",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 8,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": true,
+      "response_id": "8c3f3f3f-1bc5-4cf3-a099-7cccfda9993a",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 13,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "8c4a22e7-71a4-4a71-bc43-9a03f5d43480",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 4,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "8ceb3779-0473-45b0-b935-3cb8fdf6f479",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 16,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "8e7809fd-1b15-402f-98ec-ebc3a6eed6f9",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 13,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "8f2b7e98-e566-47c8-bf5b-35659ddec99e",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 13,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "brand_about",
+      "recommended": false,
+      "response_id": "8f761923-2485-4a8f-817a-563bc1396fbf",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "brand_about",
+      "recommended": false,
+      "response_id": "9074ca1a-a68c-4c1d-9473-e0e9748eda2e",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 4,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "brand_about",
+      "recommended": false,
+      "response_id": "90b3eb79-cdf8-4fdb-ac9b-43089065a092",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "comparison_alternatives",
+      "recommended": false,
+      "response_id": "91489c39-b122-4ac6-9702-f69600360658",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "930518b9-de1e-445f-9f5d-68c3986e7836",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "953e6675-8bec-4fe1-b53a-2fbcc9df00de",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 4,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "brand_about",
+      "recommended": false,
+      "response_id": "95a7db89-bcd6-49fa-bd03-ab098605fcc1",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 19,
+      "engine": "aimode",
+      "negative": true,
+      "present": true,
+      "prompt_category": "brand_about",
+      "recommended": false,
+      "response_id": "95f393e4-e371-4acf-8c6e-1a74bf65c045",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 7,
+      "engine": "gemini",
+      "negative": true,
+      "present": true,
+      "prompt_category": "brand_about",
+      "recommended": false,
+      "response_id": "9630ab41-2e94-4cfc-b22f-478264263a56",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "9a8ef397-694c-465a-81d4-09df1bc1342e",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 21,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "9aefbc5a-d270-42d8-b07f-1945b2e98c76",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 29,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "comparison_alternatives",
+      "recommended": false,
+      "response_id": "9da8423e-08dc-4067-8f25-5ef142a5201c",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": true,
+      "response_id": "9ef923c0-987a-4df8-96f4-6072f6bf16ee",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 18,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "a3fdd8bb-bcd9-4608-9786-ad4b3a2c7dc2",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 24,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "a46bc527-5558-40b7-a5b8-f1c22435dd03",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 14,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "a49eba68-bda8-4278-95ac-4334391bc7f3",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 17,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "a6e9c6c4-1ac1-4f7f-bdc9-35ccca16ca7d",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": true,
+      "response_id": "ac5bdf24-6a6e-49a0-abf5-2755ff3b42bc",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 18,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "af07e6ca-910a-4aad-90ce-5efa80e1b2a1",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 25,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "af2462e6-b4a0-47b2-a540-a374b22e0d5f",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 13,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "b0154a95-8a6c-45fd-a3b6-5ab99872b33a",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 10,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "b064461f-7855-477d-bded-95dbb6e9562c",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 18,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "b40168e8-acf4-4430-b22d-8c484fab846f",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 23,
+      "engine": "aimode",
+      "negative": true,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": true,
+      "response_id": "b7768287-1be1-4089-bbbd-c0908289b0b9",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 8,
+      "engine": "gemini",
+      "negative": true,
+      "present": true,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "b87e2b44-032c-40d8-92e5-a8223212d3d4",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 6,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "b8c771d4-1394-47bf-b185-ef294ef6d5f6",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 25,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "b9042e76-dd8d-4ecb-8dae-bdd37ef04754",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 34,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "tool_selection",
+      "recommended": false,
+      "response_id": "b9f436b9-af39-486a-bbbe-d4692e55d6fb",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 28,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "bb1301e0-c91a-4d8a-a954-f9fecd87a4d5",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 34,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "tool_selection",
+      "recommended": false,
+      "response_id": "bc011973-55ba-4942-ae90-4f09849a221d",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": true,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "bc213889-4850-4ae2-bf8e-af1159ff6f9c",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 21,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "bd13800f-700c-405a-ab1e-7f37f24669e7",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 6,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": true,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "c3b978b0-d181-4941-8d88-241cab857499",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 14,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "c5344e96-4a42-4f17-818b-774beaef5ed7",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 5,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "c66bc7a5-3144-48a3-9a50-0a30523c0bc1",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 21,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "c71540a7-7010-4324-ae6d-036c3f8898ce",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 20,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "comparison_alternatives",
+      "recommended": false,
+      "response_id": "c73aba11-2772-42d0-a20f-17f015969a31",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 23,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "c7e908af-8c70-469d-8330-5080cc50741e",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 4,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "brand_about",
+      "recommended": false,
+      "response_id": "c937b823-bb09-4fcc-ab79-449d54f906d2",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 40,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "d37e9604-d0ae-4021-a73f-02fd822e8d01",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 23,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": true,
+      "prompt_category": "general",
+      "recommended": false,
+      "response_id": "d5043498-a516-463e-b97b-5fc917f5e26a",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 6,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "d748ed0e-2cc5-4fc7-9a94-64811235a4c9",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 13,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "d8e9834b-2520-41f3-a18f-95735da3a66f",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 8,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "da579a76-82ed-4c77-927d-6af8329d0a3e",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 32,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "db36a033-8f83-47bb-a0ba-8c35539f8aed",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 9,
+      "engine": "gemini",
+      "negative": false,
+      "present": false,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "e2bb9e59-578d-474c-b7e1-ee8c29b36d90",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 10,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": true,
+      "response_id": "e3969fc6-5f7f-4994-a152-d9072be6f173",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 14,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "e4be4da9-d2cd-40ed-876a-185c4cfbac71",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 26,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "e6415205-604e-4fae-988e-5fa13dfb8002",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 13,
+      "engine": "gemini",
+      "negative": false,
+      "present": true,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "ead5da6c-cd59-4bad-827e-49ae12f4e232",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 21,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "ee8878c5-69b1-41c4-82a0-13a83c237f2f",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 32,
+      "engine": "aimode",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "f2081176-45c1-4b0b-afec-0f0a65110fc6",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 2,
+      "engine": "gemini",
+      "negative": true,
+      "present": true,
+      "prompt_category": "legitimacy_trust",
+      "recommended": false,
+      "response_id": "f3b89676-4b0a-4343-a080-2fea2a3508cf",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "pricing_value",
+      "recommended": false,
+      "response_id": "f5100351-d640-4d2a-ad89-968dfa508b01",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 12,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": true,
+      "prompt_category": "implementation_howto",
+      "recommended": true,
+      "response_id": "f5109b67-a854-4fa0-a05f-e9a88b5b3edb",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 20,
+      "engine": "chatgpt",
+      "negative": true,
+      "present": true,
+      "prompt_category": "brand_about",
+      "recommended": false,
+      "response_id": "fa0dff8e-b96c-49b0-bcf3-0d410451bdf4",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 14,
+      "engine": "chatgpt",
+      "negative": false,
+      "present": false,
+      "prompt_category": "implementation_howto",
+      "recommended": false,
+      "response_id": "fab48e6e-a61b-43d2-ac30-40fcb0716d48",
+      "status": "succeeded"
+    },
+    {
+      "citation_count": 6,
+      "engine": "aimode",
+      "negative": false,
+      "present": true,
+      "prompt_category": "onboarding_support",
+      "recommended": false,
+      "response_id": "ffdd37a9-6c48-4dff-8abd-c455bc9580b2",
+      "status": "succeeded"
+    }
+  ],
+  "run": {
+    "brand": "Kasparro",
+    "capture_provider": "DataForSEO",
+    "domain": "kasparro.com",
+    "engines": {
+      "aimode": "Google AI Mode",
+      "chatgpt": "ChatGPT",
+      "gemini": "Gemini"
+    },
+    "historical_capture_date": "2026-07-31",
+    "language": "en",
+    "limitations": [
+      "One captured answer per prompt and engine; no repeated-run reliability evidence.",
+      "Model labels are provider-reported; missing labels remain null.",
+      "Publication dates were not recorded for the supplied citation entries.",
+      "Sentiment/perception captures and existing production scores are outside this pack.",
+      "Historical answers may differ from current live results."
+    ],
+    "location": "India",
+    "original_run_counts": {
+      "citation_occurrences": 2439,
+      "prompts": 50,
+      "responses": 150
+    },
+    "pack_prepared_at": "2026-10-27",
+    "provenance": {
+      "source_archive_name": "Kasparro_robust_run_2026-07-31.zip",
+      "source_archive_sha256": "5ff5316bf25a9d28bbde270f2b747d87a2d4044754ab694d896e2cb07dda0656"
+    },
+    "run_id": "4a4b71d9-9b0d-4497-85f1-7db5c4e21472",
+    "source_export_date": "2026-10-27",
+    "status_basis": "capture_status is a packaging description of archived captured answers, not a model-quality judgment.",
+    "this_pack_counts": {
+      "citation_occurrences": 2439,
+      "prompts": 50,
+      "responses": 150
+    }
+  },
+  "schema_version": "report-content-v1",
+  "scores": {
+    "by_category": {
+      "brand_about": {
+        "citation_presence": {
+          "count": 9,
+          "rate": 1.0
+        },
+        "components": {
+          "inclusion": {
+            "denominator": 9,
+            "numerator": 9,
+            "rate": 1.0,
+            "weight": 0.4,
+            "weighted_contribution": 0.4
+          },
+          "non_negative": {
+            "denominator": 9,
+            "numerator": 4,
+            "rate": 0.4444,
+            "weight": 0.2,
+            "weighted_contribution": 0.0889
+          },
+          "recommendation": {
+            "denominator": 9,
+            "numerator": 0,
+            "rate": 0.0,
+            "weight": 0.4,
+            "weighted_contribution": 0.0
+          }
+        },
+        "coverage": 1.0,
+        "eligible": 9,
+        "failed": 0,
+        "inclusion_rate": 1.0,
+        "intervals": {
+          "inclusion": [
+            0.7008,
+            1.0
+          ],
+          "negative": [
+            0.2666,
+            0.8112
+          ],
+          "recommendation": [
+            0.0,
+            0.2992
+          ]
+        },
+        "label_counts": {
+          "negative": 5,
+          "present": 9,
+          "recommended": 0
+        },
+        "n": 9,
+        "negative_rate": 0.5556,
+        "position_distribution": {
+          "count": 0,
+          "positions": {}
+        },
+        "recommendation_rate": 0.0,
+        "skipped": 0,
+        "visibility_index": 48.89
+      },
+      "comparison_alternatives": {
+        "citation_presence": {
+          "count": 11,
+          "rate": 0.9167
+        },
+        "components": {
+          "inclusion": {
+            "denominator": 12,
+            "numerator": 6,
+            "rate": 0.5,
+            "weight": 0.4,
+            "weighted_contribution": 0.2
+          },
+          "non_negative": {
+            "denominator": 12,
+            "numerator": 10,
+            "rate": 0.8333,
+            "weight": 0.2,
+            "weighted_contribution": 0.1667
+          },
+          "recommendation": {
+            "denominator": 12,
+            "numerator": 0,
+            "rate": 0.0,
+            "weight": 0.4,
+            "weighted_contribution": 0.0
+          }
+        },
+        "coverage": 1.0,
+        "eligible": 12,
+        "failed": 0,
+        "inclusion_rate": 0.5,
+        "intervals": {
+          "inclusion": [
+            0.2538,
+            0.7462
+          ],
+          "negative": [
+            0.047,
+            0.448
+          ],
+          "recommendation": [
+            0.0,
+            0.2425
+          ]
+        },
+        "label_counts": {
+          "negative": 2,
+          "present": 6,
+          "recommended": 0
+        },
+        "n": 12,
+        "negative_rate": 0.1667,
+        "position_distribution": {
+          "count": 0,
+          "positions": {}
+        },
+        "recommendation_rate": 0.0,
+        "skipped": 0,
+        "visibility_index": 36.67
+      },
+      "general": {
+        "citation_presence": {
+          "count": 15,
+          "rate": 1.0
+        },
+        "components": {
+          "inclusion": {
+            "denominator": 15,
+            "numerator": 6,
+            "rate": 0.4,
+            "weight": 0.4,
+            "weighted_contribution": 0.16
+          },
+          "non_negative": {
+            "denominator": 15,
+            "numerator": 13,
+            "rate": 0.8667,
+            "weight": 0.2,
+            "weighted_contribution": 0.1733
+          },
+          "recommendation": {
+            "denominator": 15,
+            "numerator": 0,
+            "rate": 0.0,
+            "weight": 0.4,
+            "weighted_contribution": 0.0
+          }
+        },
+        "coverage": 1.0,
+        "eligible": 15,
+        "failed": 0,
+        "inclusion_rate": 0.4,
+        "intervals": {
+          "inclusion": [
+            0.1982,
+            0.6425
+          ],
+          "negative": [
+            0.0374,
+            0.3788
+          ],
+          "recommendation": [
+            0.0,
+            0.2039
+          ]
+        },
+        "label_counts": {
+          "negative": 2,
+          "present": 6,
+          "recommended": 0
+        },
+        "n": 15,
+        "negative_rate": 0.1333,
+        "position_distribution": {
+          "count": 0,
+          "positions": {}
+        },
+        "recommendation_rate": 0.0,
+        "skipped": 0,
+        "visibility_index": 33.33
+      },
+      "implementation_howto": {
+        "citation_presence": {
+          "count": 30,
+          "rate": 1.0
+        },
+        "components": {
+          "inclusion": {
+            "denominator": 30,
+            "numerator": 6,
+            "rate": 0.2,
+            "weight": 0.4,
+            "weighted_contribution": 0.08
+          },
+          "non_negative": {
+            "denominator": 30,
+            "numerator": 29,
+            "rate": 0.9667,
+            "weight": 0.2,
+            "weighted_contribution": 0.1933
+          },
+          "recommendation": {
+            "denominator": 30,
+            "numerator": 4,
+            "rate": 0.1333,
+            "weight": 0.4,
+            "weighted_contribution": 0.0533
+          }
+        },
+        "coverage": 1.0,
+        "eligible": 30,
+        "failed": 0,
+        "inclusion_rate": 0.2,
+        "intervals": {
+          "inclusion": [
+            0.095,
+            0.3731
+          ],
+          "negative": [
+            0.0059,
+            0.1667
+          ],
+          "recommendation": [
+            0.0531,
+            0.2968
+          ]
+        },
+        "label_counts": {
+          "negative": 1,
+          "present": 6,
+          "recommended": 4
+        },
+        "n": 30,
+        "negative_rate": 0.0333,
+        "position_distribution": {
+          "count": 0,
+          "positions": {}
+        },
+        "recommendation_rate": 0.1333,
+        "skipped": 0,
+        "visibility_index": 32.67
+      },
+      "legitimacy_trust": {
+        "citation_presence": {
+          "count": 24,
+          "rate": 1.0
+        },
+        "components": {
+          "inclusion": {
+            "denominator": 24,
+            "numerator": 17,
+            "rate": 0.7083,
+            "weight": 0.4,
+            "weighted_contribution": 0.2833
+          },
+          "non_negative": {
+            "denominator": 24,
+            "numerator": 14,
+            "rate": 0.5833,
+            "weight": 0.2,
+            "weighted_contribution": 0.1167
+          },
+          "recommendation": {
+            "denominator": 24,
+            "numerator": 6,
+            "rate": 0.25,
+            "weight": 0.4,
+            "weighted_contribution": 0.1
+          }
+        },
+        "coverage": 1.0,
+        "eligible": 24,
+        "failed": 0,
+        "inclusion_rate": 0.7083,
+        "intervals": {
+          "inclusion": [
+            0.5083,
+            0.8509
+          ],
+          "negative": [
+            0.2447,
+            0.6117
+          ],
+          "recommendation": [
+            0.12,
+            0.449
+          ]
+        },
+        "label_counts": {
+          "negative": 10,
+          "present": 17,
+          "recommended": 6
+        },
+        "n": 24,
+        "negative_rate": 0.4167,
+        "position_distribution": {
+          "count": 0,
+          "positions": {}
+        },
+        "recommendation_rate": 0.25,
+        "skipped": 0,
+        "visibility_index": 50.0
+      },
+      "onboarding_support": {
+        "citation_presence": {
+          "count": 24,
+          "rate": 1.0
+        },
+        "components": {
+          "inclusion": {
+            "denominator": 24,
+            "numerator": 16,
+            "rate": 0.6667,
+            "weight": 0.4,
+            "weighted_contribution": 0.2667
+          },
+          "non_negative": {
+            "denominator": 24,
+            "numerator": 20,
+            "rate": 0.8333,
+            "weight": 0.2,
+            "weighted_contribution": 0.1667
+          },
+          "recommendation": {
+            "denominator": 24,
+            "numerator": 4,
+            "rate": 0.1667,
+            "weight": 0.4,
+            "weighted_contribution": 0.0667
+          }
+        },
+        "coverage": 1.0,
+        "eligible": 24,
+        "failed": 0,
+        "inclusion_rate": 0.6667,
+        "intervals": {
+          "inclusion": [
+            0.4671,
+            0.8203
+          ],
+          "negative": [
+            0.0668,
+            0.3585
+          ],
+          "recommendation": [
+            0.0668,
+            0.3585
+          ]
+        },
+        "label_counts": {
+          "negative": 4,
+          "present": 16,
+          "recommended": 4
+        },
+        "n": 24,
+        "negative_rate": 0.1667,
+        "position_distribution": {
+          "count": 0,
+          "positions": {}
+        },
+        "recommendation_rate": 0.1667,
+        "skipped": 0,
+        "visibility_index": 50.0
+      },
+      "pricing_value": {
+        "citation_presence": {
+          "count": 27,
+          "rate": 1.0
+        },
+        "components": {
+          "inclusion": {
+            "denominator": 27,
+            "numerator": 12,
+            "rate": 0.4444,
+            "weight": 0.4,
+            "weighted_contribution": 0.1778
+          },
+          "non_negative": {
+            "denominator": 27,
+            "numerator": 20,
+            "rate": 0.7407,
+            "weight": 0.2,
+            "weighted_contribution": 0.1481
+          },
+          "recommendation": {
+            "denominator": 27,
+            "numerator": 0,
+            "rate": 0.0,
+            "weight": 0.4,
+            "weighted_contribution": 0.0
+          }
+        },
+        "coverage": 1.0,
+        "eligible": 27,
+        "failed": 0,
+        "inclusion_rate": 0.4444,
+        "intervals": {
+          "inclusion": [
+            0.2759,
+            0.6269
+          ],
+          "negative": [
+            0.1317,
+            0.4468
+          ],
+          "recommendation": [
+            0.0,
+            0.1246
+          ]
+        },
+        "label_counts": {
+          "negative": 7,
+          "present": 12,
+          "recommended": 0
+        },
+        "n": 27,
+        "negative_rate": 0.2593,
+        "position_distribution": {
+          "count": 1,
+          "positions": {
+            "3": 1
+          }
+        },
+        "recommendation_rate": 0.0,
+        "skipped": 0,
+        "visibility_index": 32.59
+      },
+      "tool_selection": {
+        "citation_presence": {
+          "count": 9,
+          "rate": 1.0
+        },
+        "components": {
+          "inclusion": {
+            "denominator": 9,
+            "numerator": 0,
+            "rate": 0.0,
+            "weight": 0.4,
+            "weighted_contribution": 0.0
+          },
+          "non_negative": {
+            "denominator": 9,
+            "numerator": 9,
+            "rate": 1.0,
+            "weight": 0.2,
+            "weighted_contribution": 0.2
+          },
+          "recommendation": {
+            "denominator": 9,
+            "numerator": 0,
+            "rate": 0.0,
+            "weight": 0.4,
+            "weighted_contribution": 0.0
+          }
+        },
+        "coverage": 1.0,
+        "eligible": 9,
+        "failed": 0,
+        "inclusion_rate": 0.0,
+        "intervals": {
+          "inclusion": [
+            0.0,
+            0.2992
+          ],
+          "negative": [
+            0.0,
+            0.2992
+          ],
+          "recommendation": [
+            0.0,
+            0.2992
+          ]
+        },
+        "label_counts": {
+          "negative": 0,
+          "present": 0,
+          "recommended": 0
+        },
+        "n": 9,
+        "negative_rate": 0.0,
+        "position_distribution": {
+          "count": 0,
+          "positions": {}
+        },
+        "recommendation_rate": 0.0,
+        "skipped": 0,
+        "visibility_index": 20.0
+      }
+    },
+    "by_engine": {
+      "aimode": {
+        "citation_presence": {
+          "count": 50,
+          "rate": 1.0
+        },
+        "components": {
+          "inclusion": {
+            "denominator": 50,
+            "numerator": 25,
+            "rate": 0.5,
+            "weight": 0.4,
+            "weighted_contribution": 0.2
+          },
+          "non_negative": {
+            "denominator": 50,
+            "numerator": 39,
+            "rate": 0.78,
+            "weight": 0.2,
+            "weighted_contribution": 0.156
+          },
+          "recommendation": {
+            "denominator": 50,
+            "numerator": 6,
+            "rate": 0.12,
+            "weight": 0.4,
+            "weighted_contribution": 0.048
+          }
+        },
+        "coverage": 1.0,
+        "eligible": 50,
+        "failed": 0,
+        "inclusion_rate": 0.5,
+        "intervals": {
+          "inclusion": [
+            0.3664,
+            0.6336
+          ],
+          "negative": [
+            0.1275,
+            0.3524
+          ],
+          "recommendation": [
+            0.0562,
+            0.2381
+          ]
+        },
+        "label_counts": {
+          "negative": 11,
+          "present": 25,
+          "recommended": 6
+        },
+        "n": 50,
+        "negative_rate": 0.22,
+        "position_distribution": {
+          "count": 0,
+          "positions": {}
+        },
+        "recommendation_rate": 0.12,
+        "skipped": 0,
+        "visibility_index": 40.4
+      },
+      "chatgpt": {
+        "citation_presence": {
+          "count": 50,
+          "rate": 1.0
+        },
+        "components": {
+          "inclusion": {
+            "denominator": 50,
+            "numerator": 25,
+            "rate": 0.5,
+            "weight": 0.4,
+            "weighted_contribution": 0.2
+          },
+          "non_negative": {
+            "denominator": 50,
+            "numerator": 35,
+            "rate": 0.7,
+            "weight": 0.2,
+            "weighted_contribution": 0.14
+          },
+          "recommendation": {
+            "denominator": 50,
+            "numerator": 5,
+            "rate": 0.1,
+            "weight": 0.4,
+            "weighted_contribution": 0.04
+          }
+        },
+        "coverage": 1.0,
+        "eligible": 50,
+        "failed": 0,
+        "inclusion_rate": 0.5,
+        "intervals": {
+          "inclusion": [
+            0.3664,
+            0.6336
+          ],
+          "negative": [
+            0.191,
+            0.4375
+          ],
+          "recommendation": [
+            0.0435,
+            0.2136
+          ]
+        },
+        "label_counts": {
+          "negative": 15,
+          "present": 25,
+          "recommended": 5
+        },
+        "n": 50,
+        "negative_rate": 0.3,
+        "position_distribution": {
+          "count": 1,
+          "positions": {
+            "3": 1
+          }
+        },
+        "recommendation_rate": 0.1,
+        "skipped": 0,
+        "visibility_index": 38.0
+      },
+      "gemini": {
+        "citation_presence": {
+          "count": 49,
+          "rate": 0.98
+        },
+        "components": {
+          "inclusion": {
+            "denominator": 50,
+            "numerator": 22,
+            "rate": 0.44,
+            "weight": 0.4,
+            "weighted_contribution": 0.176
+          },
+          "non_negative": {
+            "denominator": 50,
+            "numerator": 45,
+            "rate": 0.9,
+            "weight": 0.2,
+            "weighted_contribution": 0.18
+          },
+          "recommendation": {
+            "denominator": 50,
+            "numerator": 3,
+            "rate": 0.06,
+            "weight": 0.4,
+            "weighted_contribution": 0.024
+          }
+        },
+        "coverage": 1.0,
+        "eligible": 50,
+        "failed": 0,
+        "inclusion_rate": 0.44,
+        "intervals": {
+          "inclusion": [
+            0.3116,
+            0.5769
+          ],
+          "negative": [
+            0.0435,
+            0.2136
+          ],
+          "recommendation": [
+            0.0206,
+            0.1622
+          ]
+        },
+        "label_counts": {
+          "negative": 5,
+          "present": 22,
+          "recommended": 3
+        },
+        "n": 50,
+        "negative_rate": 0.1,
+        "position_distribution": {
+          "count": 0,
+          "positions": {}
+        },
+        "recommendation_rate": 0.06,
+        "skipped": 0,
+        "visibility_index": 38.0
+      }
+    },
+    "overall": {
+      "citation_presence": {
+        "count": 149,
+        "rate": 0.9933
+      },
+      "components": {
+        "inclusion": {
+          "denominator": 150,
+          "numerator": 72,
+          "rate": 0.48,
+          "weight": 0.4,
+          "weighted_contribution": 0.192
+        },
+        "non_negative": {
+          "denominator": 150,
+          "numerator": 119,
+          "rate": 0.7933,
+          "weight": 0.2,
+          "weighted_contribution": 0.1587
+        },
+        "recommendation": {
+          "denominator": 150,
+          "numerator": 14,
+          "rate": 0.0933,
+          "weight": 0.4,
+          "weighted_contribution": 0.0373
+        }
+      },
+      "coverage": 1.0,
+      "eligible": 150,
+      "failed": 0,
+      "inclusion_rate": 0.48,
+      "intervals": {
+        "inclusion": [
+          0.4015,
+          0.5594
+        ],
+        "negative": [
+          0.1496,
+          0.2784
+        ],
+        "recommendation": [
+          0.0564,
+          0.1506
+        ]
+      },
+      "label_counts": {
+        "negative": 31,
+        "present": 72,
+        "recommended": 14
+      },
+      "n": 150,
+      "negative_rate": 0.2067,
+      "position_distribution": {
+        "count": 1,
+        "positions": {
+          "3": 1
+        }
+      },
+      "recommendation_rate": 0.0933,
+      "skipped": 0,
+      "visibility_index": 38.8,
+      "weights": {
+        "inclusion": 0.4,
+        "non_negative": 0.2,
+        "recommendation": 0.4
+      }
+    }
+  }
+}

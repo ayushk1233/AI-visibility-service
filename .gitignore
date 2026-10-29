@@ -1,0 +1,27 @@
+# Excluded briefs and internal planning
+Assignment - Experience.docx
+Assignment - Senior.pdf
+START_HERE.txt
+PLAN.md
+ARCHITECTURE.md
+EVALUATION_PLAN.md
+AGENTS.md
+.DS_Store
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Runtime state and local secrets
+db/
+*.db
+*.db-wal
+*.db-shm
+.env
+uploads/
+eval/results/
+*.log

@@ -1,0 +1,38 @@
+{
+  "run_id": "4a4b71d9-9b0d-4497-85f1-7db5c4e21472",
+  "brand": "Kasparro",
+  "domain": "kasparro.com",
+  "historical_capture_date": "2026-07-31",
+  "pack_prepared_at": "2026-10-27",
+  "source_export_date": "2026-10-27",
+  "location": "India",
+  "language": "en",
+  "capture_provider": "DataForSEO",
+  "engines": {
+    "aimode": "Google AI Mode",
+    "chatgpt": "ChatGPT",
+    "gemini": "Gemini"
+  },
+  "original_run_counts": {
+    "prompts": 50,
+    "responses": 150,
+    "citation_occurrences": 2439
+  },
+  "this_pack_counts": {
+    "prompts": 50,
+    "responses": 150,
+    "citation_occurrences": 2439
+  },
+  "status_basis": "capture_status is a packaging description of archived captured answers, not a model-quality judgment.",
+  "provenance": {
+    "source_archive_name": "Kasparro_robust_run_2026-07-31.zip",
+    "source_archive_sha256": "5ff5316bf25a9d28bbde270f2b747d87a2d4044754ab694d896e2cb07dda0656"
+  },
+  "limitations": [
+    "One captured answer per prompt and engine; no repeated-run reliability evidence.",
+    "Model labels are provider-reported; missing labels remain null.",
+    "Publication dates were not recorded for the supplied citation entries.",
+    "Sentiment/perception captures and existing production scores are outside this pack.",
+    "Historical answers may differ from current live results."
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "generated_at": "2026-10-29T11:34:31.469827+00:00",
+  "mode": "live",
+  "model": "qwen/qwen3.8-27b",
+  "label_set_version": "v1",
+  "labels_file": "eval/cases/label_set_v1.jsonl",
+  "edges_file": "eval/cases/edge_cases_v1.jsonl",
+  "prompt_version": "classify-v1",
+  "scoring": {
+    "weights": {
+      "inclusion": 0.4,
+      "recommendation": 0.4,
+      "non_negative": 0.2
+    },
+    "interval": "wilson-95"
+  },
+  "config_hash": "faccd6d4b74fa7ff518786eedb37c03cd9eb024ef315bef4d8df5bb63fb46e78",
+  "cases": {
+    "supplied": 12,
+    "supplied_tuning": 8,
+    "supplied_final_check": 4,
+    "edge": 3
+  },
+  "supplied": {
+    "baseline": {
+      "eligible": 12,
+      "succeeded": 12,
+      "failed": 0,
+      "skipped": 0,
+      "label_metrics_n": 12,
+      "labels": {
+        "kasparro_present": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "tn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "kappa": null
+        },
+        "recommended": {
+          "tp": 3,
+          "fp": 3,
+          "fn": 0,
+          "tn": 6,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6667,
+          "kappa": 0.5
+        },
+        "negatively_characterised": {
+          "tp": 2,
+          "fp": 1,
+          "fn": 1,
+          "tn": 8,
+          "precision": 0.6667,
+          "recall": 0.6667,
+          "f1": 0.6667,
+          "kappa": 0.5556
+        }
+      },
+      "macro_f1": 0.7778,
+      "raw_agreement": 0.6667,
+      "by_engine": {
+        "aimode": {
+          "n": 4,
+          "exact_matches": 3,
+          "raw_agreement": 0.75
+        },
+        "chatgpt": {
+          "n": 4,
+          "exact_matches": 2,
+          "raw_agreement": 0.5
+        },
+        "gemini": {
+          "n": 4,
+          "exact_matches": 3,
+          "raw_agreement": 0.75
+        }
+      },
+      "by_split": {
+        "final_check": {
+          "n": 4,
+          "exact_matches": 3,
+          "raw_agreement": 0.75
+        },
+        "tuning": {
+          "n": 8,
+          "exact_matches": 5,
+          "raw_agreement": 0.625
+        }
+      }
+    },
+    "approach": {
+      "eligible": 12,
+      "succeeded": 12,
+      "failed": 0,
+      "skipped": 0,
+      "label_metrics_n": 12,
+      "labels": {
+        "kasparro_present": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "tn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "kappa": null
+        },
+        "recommended": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "tn": 9,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "kappa": 1.0
+        },
+        "negatively_characterised": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "tn": 9,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "kappa": 1.0
+        }
+      },
+      "macro_f1": 1.0,
+      "raw_agreement": 1.0,
+      "by_engine": {
+        "aimode": {
+          "n": 4,
+          "exact_matches": 4,
+          "raw_agreement": 1.0
+        },
+        "chatgpt": {
+          "n": 4,
+          "exact_matches": 4,
+          "raw_agreement": 1.0
+        },
+        "gemini": {
+          "n": 4,
+          "exact_matches": 4,
+          "raw_agreement": 1.0
+        }
+      },
+      "by_split": {
+        "final_check": {
+          "n": 4,
+          "exact_matches": 4,
+          "raw_agreement": 1.0
+        },
+        "tuning": {
+          "n": 8,
+          "exact_matches": 8,
+          "raw_agreement": 1.0
+        }
+      }
+    },
+    "baseline_competitors": {
+      "cases": 12,
+      "tp": 3,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.6,
+      "recall": 0.6,
+      "f1": 0.6
+    },
+    "approach_competitors": {
+      "cases": 12,
+      "tp": 4,
+      "fp": 32,
+      "fn": 1,
+      "precision": 0.1111,
+      "recall": 0.8,
+      "f1": 0.1951
+    },
+    "approach_evidence": {
+      "quotes": 25,
+      "valid": 25,
+      "rate": 1.0
+    },
+    "citation_presence": {
+      "cases": 12,
+      "matches": 12,
+      "rate": 1.0
+    },
+    "edge": {
+      "baseline": {
+        "eligible": 3,
+        "succeeded": 3,
+        "failed": 0,
+        "skipped": 0,
+        "label_metrics_n": 2,
+        "labels": {
+          "kasparro_present": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "tn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "kappa": null
+          },
+          "recommended": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "tn": 1,
+            "precision": null,
+            "recall": 0.0,
+            "f1": null,
+            "kappa": 0.0
+          },
+          "negatively_characterised": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "tn": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "kappa": 1.0
+          }
+        },
+        "macro_f1": 1.0,
+        "raw_agreement": 0.5
+      },
+      "approach": {
+        "eligible": 3,
+        "succeeded": 2,
+        "failed": 1,
+        "skipped": 0,
+        "label_metrics_n": 2,
+        "labels": {
+          "kasparro_present": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "tn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "kappa": null
+          },
+          "recommended": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "tn": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "kappa": 1.0
+          },
+          "negatively_characterised": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "tn": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "kappa": 1.0
+          }
+        },
+        "macro_f1": 1.0,
+        "raw_agreement": 1.0
+      }
+    },
+    "approach_failures": [
+      {
+        "response_id": "edge-evidence-boundary",
+        "expected_outcome": "failed",
+        "actual_status": "failed",
+        "reason_code": "invalid_evidence",
+        "reason_detail": "Evidence quote does not occur in the answer text"
+      }
+    ],
+    "edge_expectations": [
+      {
+        "response_id": "edge-ambiguous-recommendation",
+        "expected_outcome": "succeeded",
+        "expected_reason": null,
+        "actual_status": "succeeded",
+        "actual_reason": null
+      },
+      {
+        "response_id": "edge-mixed-negative-praise",
+        "expected_outcome": "succeeded",
+        "expected_reason": null,
+        "actual_status": "succeeded",
+        "actual_reason": null
+      },
+      {
+        "response_id": "edge-evidence-boundary",
+        "expected_outcome": "failed",
+        "expected_reason": "invalid_evidence",
+        "actual_status": "failed",
+        "actual_reason": "invalid_evidence"
+      }
+    ]
+  },
+  "limitations": [
+    "Small single-annotator sample; estimates are unstable.",
+    "The replay heuristic was revised after inspecting labelled cases; replay agreement is not independent generalization evidence.",
+    "The final-check split was not a fully blind holdout because the author had inspected all supplied answers while labelling.",
+    "One response per prompt and engine; no run-to-run variability measure.",
+    "ChatGPT force_web_search=true while AI Mode and Gemini are null; engine comparison is confounded.",
+    "Citation presence is not claim support.",
+    "Replay mode demonstrates mechanics, not live-model quality.",
+    "Controlled synthetic cases are not observations of the supplied providers."
+  ]
+}
